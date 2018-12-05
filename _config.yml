@@ -13,31 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: EOSC FAIR4S
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Here you can find the EOSCpilot framework of FAIR data stewardship skills
+  for science and scholarship FAIR4S demonstrating the major use cases the
+  work package Skills currently anticipates
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github:  https://github.com/EOSC-FAIR4S/eosc-fair4s.github.io
+
+cookie_accept_message: Thanks!
 
 # Build settings
 markdown: kramdown
-theme: jekyll-material-theme
 
-parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
-parallax_image_two: assets/images/startup3.jpg
-
-portfolio_heading: Portfolio
-portfolio_type: cards #cards or carousel
-
-project_one: "First Project"
-project_one_description: Describe your project!
-project_one_url: https://github.com/jameshamann/jekyll-material-theme
-project_one_icon: location_on
+parallax_image_one: assets/images/background1.png # These are the images used for the parallax background
+parallax_image_two: assets/images/background1.png
 
 plugins:
   - jekyll-feed
