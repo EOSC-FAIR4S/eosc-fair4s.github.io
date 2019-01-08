@@ -1,0 +1,9 @@
+basic: 
+    name: basic
+    logo: far fa-star-half
+intermediate: 
+    name: intermediate
+    logo: fas fa-star-half-alt
+expert: 
+    name: expert
+    logo: fas fa-star
