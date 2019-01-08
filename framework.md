@@ -5,6 +5,7 @@ layout: framework
 framework:
   - 
     name: Plan and design
+    color: red
     competences: 
       - 
         name: Planning data management and sharing (DMP)
@@ -73,6 +74,7 @@ framework:
             manager: expert
   - 
     name: Capture and process
+    color: green
     competences: 
       - 
         name: Workflow set up and documentation
@@ -154,6 +156,7 @@ framework:
             manager: intermediate
   - 
     name: Integrate and analyse
+    color: purple
     competences: 
       - 
         name: Math and statistical knowledge application
@@ -261,6 +264,7 @@ framework:
             manager: basic
   - 
     name: Appraise and preserve
+    color: cyan
     competences: 
     - 
       name: Data preparation, documentation for reproducibility
@@ -342,6 +346,7 @@ framework:
           manager: intermediate
   - 
     name: Publish and release
+    color: amber
     competences: 
     - 
       name: Documentation for public use, lay understanding
@@ -423,6 +428,7 @@ framework:
           manager: basic
   - 
     name: Expose and discover
+    color: brown
     competences: 
     - 
       name: Vocabulary/ ontology application
@@ -504,6 +510,7 @@ framework:
           manager: basic
   - 
     name: Govern and assess
+    color: indigo
     competences: 
     - 
       name: Research strategy/ open research vision
@@ -598,6 +605,7 @@ framework:
           manager: basic
   - 
     name: Scope and resource
+    color: blue
     competences: 
     - 
       name: Securing funding for open science/ support
@@ -705,6 +713,7 @@ framework:
           manager: expert
   - 
     name: Advise and enable
+    color: light-blue
     competences: 
     - 
       name: Building open inter-disciplinary collaborations

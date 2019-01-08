@@ -34,17 +34,17 @@
 		{% for competence in element.competences %}
 		<tr>
 			{% if isfirst %}
-			<td rowspan="{{ element.competences.size }}">{{ element.name }}</td>
+			<td rowspan="{{ element.competences.size }}" class="{{ element.color }} darken-3">{{ element.name }}</td>
 			{% assign isfirst = false %}
 			{% endif %}
-			<td>{{ competence.name }}</td>
+			<td class="{{ element.color }} lighten-4">{{ competence.name }}</td>
 			{% for type in types %}
 				{% capture level %}{{ competence.expertise.users[type] }}{% endcapture %}
-				<td><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
+				<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
 			{% endfor %}
 			{% for type in types %}
 				{% capture level %}{{ competence.expertise.operators[type] }}{% endcapture %}
-				<td><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
+				<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
 			{% endfor %}
 		</tr>
 		{% endfor %}
