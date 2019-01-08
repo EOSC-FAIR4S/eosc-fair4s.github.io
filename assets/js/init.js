@@ -17,6 +17,7 @@ $(document).ready(function () {
 
 	$('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.tooltipped').tooltip();
 /*
      $('.button-collapse').sideNav();
      $('.parallax').parallax();
