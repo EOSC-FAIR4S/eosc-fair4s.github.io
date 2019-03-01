@@ -1,6 +1,7 @@
 ---
-title: EOSCpilot Skills and capability framework
-version: 1.0 for consultation
+title: FAIR4S competences and capabilities
+subtitle: EOSCpilot framework of FAIR data stewardship skills for science and scholarship
+version: 2.0 Feb 2019
 layout: framework
 framework:
   - 
@@ -8,7 +9,8 @@ framework:
     color: red
     competences: 
       - 
-        name: Planning data management and sharing (DMP)
+        name: Plan stewardship and sharing of FAIR outputs
+        keyskill: true
         expertise: 
           users: 
             researcher: intermediate
@@ -21,7 +23,7 @@ framework:
             engineer: basic
             manager: expert
       - 
-        name: Open data model and database design
+        name: Model data structures and define database needs
         expertise: 
           users: 
             researcher: basic
@@ -34,7 +36,7 @@ framework:
             engineer: intermediate
             manager: expert
       - 
-        name: Metadata, persistent id. specification
+        name: Specifying metadata and persistent id. standards
         expertise: 
           users: 
             researcher: basic
@@ -47,7 +49,7 @@ framework:
             engineer: intermediate
             manager: intermediate
       - 
-        name: Open source software / service requirements
+        name: Analyse requirements for services or software
         expertise: 
           users: 
             researcher: basic
@@ -60,7 +62,7 @@ framework:
             engineer: intermediate
             manager: expert
       - 
-        name: Repository and data management platform appraisal
+        name: Appraise and select repositories for FAIR sharing
         expertise: 
           users: 
             researcher: basic
@@ -77,20 +79,21 @@ framework:
     color: green
     competences: 
       - 
-        name: Workflow set up and documentation
+        name: Reuse data from existing sources
+        keyskill: true
         expertise: 
           users: 
             researcher: intermediate
-            scientist: intermediate
+            scientist: expert
             engineer: basic
-            manager: expert
+            manager: intermediate
           operators: 
-            researcher: basic
+            researcher: expert
             scientist: basic
             engineer: basic
             manager: basic
       - 
-        name: Database management
+        name: Manage databases
         expertise: 
           users: 
             researcher: ''
@@ -116,15 +119,15 @@ framework:
             engineer: expert
             manager: intermediate
       - 
-        name: Data collection and reuse of open data
+        name: Set up and document workflows
         expertise: 
           users: 
             researcher: intermediate
-            scientist: expert
+            scientist: intermediate
             engineer: basic
-            manager: intermediate
+            manager: expert
           operators: 
-            researcher: expert
+            researcher: basic
             scientist: basic
             engineer: basic
             manager: basic
@@ -142,7 +145,7 @@ framework:
             engineer: intermediate
             manager: intermediate
       - 
-        name: Data provenance and software versioning
+        name: Data cleaning, processing and software versioning
         expertise: 
           users: 
             researcher: intermediate
@@ -159,18 +162,19 @@ framework:
     color: purple
     competences: 
       - 
-        name: Math and statistical knowledge application
+        name: Use or develop open research tools/services
+        keyskill: true
         expertise: 
           users: 
-            researcher: intermediate
+            researcher: basic
             scientist: expert
-            engineer: intermediate
-            manager: basic
+            engineer: expert
+            manager: intermediate
           operators: 
             researcher: intermediate
-            scientist: basic
-            engineer: basic
-            manager: basic
+            scientist: expert
+            engineer: expert
+            manager: expert
       - 
         name: Critical thinking and theory building
         expertise: 
@@ -198,18 +202,18 @@ framework:
             engineer: basic
             manager: basic
       - 
-        name: Open source software / service development
+        name: Math and statistical knowledge application
         expertise: 
           users: 
-            researcher: basic
-            scientist: expert
-            engineer: expert
-            manager: intermediate
-          operators: 
             researcher: intermediate
             scientist: expert
-            engineer: expert
-            manager: expert
+            engineer: intermediate
+            manager: basic
+          operators: 
+            researcher: intermediate
+            scientist: basic
+            engineer: basic
+            manager: basic
       - 
         name: Data transformation and integration
         expertise: 
@@ -267,7 +271,8 @@ framework:
     color: cyan
     competences: 
     - 
-      name: Data preparation, documentation for reproducibility
+      name: Prepare and document for FAIR outputs
+      keyskill: true
       expertise: 
         users: 
           researcher: intermediate
@@ -349,16 +354,17 @@ framework:
     color: amber
     competences: 
     - 
-      name: Documentation for public use, lay understanding
+      name: Publish FAIR outputs on recommended repositories
+      keyskill: true
       expertise: 
         users: 
-          researcher: basic
+          researcher: intermediate
           scientist: intermediate
-          engineer: expert
-          manager: basic
+          engineer: intermediate
+          manager: expert
         operators: 
-          researcher: expert
-          scientist: intermediate
+          researcher: basic
+          scientist: basic
           engineer: intermediate
           manager: intermediate
     - 
@@ -401,16 +407,16 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Sharing via open repositories/ platforms
+      name: Documentation for public use, lay understanding
       expertise: 
         users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: expert
-        operators: 
           researcher: basic
-          scientist: basic
+          scientist: intermediate
+          engineer: expert
+          manager: basic
+        operators: 
+          researcher: expert
+          scientist: intermediate
           engineer: intermediate
           manager: intermediate
     - 
@@ -431,17 +437,18 @@ framework:
     color: brown
     competences: 
     - 
-      name: Vocabulary/ ontology application
+      name: Recognise, cite and acknowledge contributions
+      keyskill: true
       expertise: 
         users: 
           researcher: intermediate
-          scientist: expert
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: basic
           scientist: intermediate
           engineer: intermediate
+          manager: intermediate
+        operators: 
+          researcher: basic
+          scientist: basic
+          engineer: basic
           manager: basic
     - 
       name: Metadata and persistent id. exposure
@@ -483,7 +490,7 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Repository/ database search
+      name: Searching repositories and scientific databases
       expertise: 
         users: 
           researcher: intermediate
@@ -496,24 +503,25 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Citation of research outputs
+      name: Vocabulary/ ontology application
       expertise: 
         users: 
           researcher: intermediate
-          scientist: intermediate
+          scientist: expert
           engineer: intermediate
-          manager: intermediate
+          manager: basic
         operators: 
           researcher: basic
-          scientist: basic
-          engineer: basic
+          scientist: intermediate
+          engineer: intermediate
           manager: basic
   - 
     name: Govern and assess
     color: indigo
     competences: 
     - 
-      name: Research strategy/ open research vision
+      name: Develop open research strategy and vision
+      keyskill: true
       expertise: 
         users: 
           researcher: intermediate
@@ -526,7 +534,8 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Advocacy of FAIR principles and Open Access policy
+      name: Comply with ethical, legal and policy requirements
+      keyskill: true
       expertise: 
         users: 
           researcher: intermediate
@@ -608,7 +617,8 @@ framework:
     color: blue
     competences: 
     - 
-      name: Securing funding for open science/ support
+      name: Secure funding for open science/ support
+      keyskill: true
       expertise: 
         users: 
           researcher: intermediate
@@ -621,7 +631,7 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Perseverance delivering diverse open research
+      name: Perseverance delivering diverse open research projects
       expertise: 
         users: 
           researcher: intermediate
@@ -660,7 +670,7 @@ framework:
           engineer: intermediate
           manager: expert
     - 
-      name: Workflow set-up and provenance information management
+      name: Workflow set-up and provenance information mgmt
       expertise: 
         users: 
           researcher: ''
@@ -716,15 +726,16 @@ framework:
     color: light-blue
     competences: 
     - 
-      name: Building open inter-disciplinary collaborations
+      name: Lead good practice by example
+      keyskill: true
       expertise: 
         users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
+          researcher: basic
+          scientist: basic
+          engineer: basic
           manager: basic
         operators: 
-          researcher: expertise
+          researcher: intermediate
           scientist: intermediate
           engineer: intermediate
           manager: intermediate
@@ -794,15 +805,15 @@ framework:
           engineer: basic
           manager: basic
     - 
-      name: Supervision and mentoring
+      name: Building open inter-disciplinary collaborations
       expertise: 
         users: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
+          researcher: intermediate
+          scientist: intermediate
+          engineer: intermediate
           manager: basic
         operators: 
-          researcher: intermediate
+          researcher: expertise
           scientist: intermediate
           engineer: intermediate
           manager: intermediate
