@@ -1,0 +1,28 @@
+researcher: 
+  name: researcher
+  title: Researcher
+data_scientist: 
+  name: data_scientist
+  title: Data scientist
+  also: 
+    - 
+      description: (aka GO-TRAIN 'Specialist embedded research data skills'; EDISON data scientist(DP04), data analyst(DSP08), DTLS Data Steward 'A')
+      sources: 
+        - EDISON
+data_advisor: 
+  name: data_advisor
+  title: Data advisor
+  also: 
+    - 
+      description: (aka GO-TRAIN 'institutional research data advisor and contact point') with variations in 'front-office' specialisations
+      sources: 
+        - RDA
+        - GO-TRAIN
+data_service_provider:
+  name: data_service_provider
+  title: Data service provider
+  also: 
+    - 
+      description: (aka long-term stewardship) with variations in 'back office' specialisations
+      sources: 
+        - ""

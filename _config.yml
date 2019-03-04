@@ -34,6 +34,12 @@ parallax_image_two: assets/images/background1.png
 plugins:
   - jekyll-feed
 
+collections: 
+  roles: 
+    output: true
+    layout: role
+    permalink: /roles/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
