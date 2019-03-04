@@ -2,8 +2,6 @@
 
 {% include navigation.html %}
 
-{% assign types = "researcher, scientist, engineer, manager" | split: ", " %}
-
 <div>
 	<h1>{{ page.title }}</h1>
 	<h2>Version: {{ page.version }}</h2>
@@ -12,20 +10,17 @@
 <table>
 	<thead>
 		<tr>
-			<th rowspan="2">Area</th>
-			<th rowspan="2">Competence</th>
-			<th colspan="4">User</th>
-			<th colspan="4">Operator</th>
+			<th rowspan="2" colspan="2">Open science stewardship competences and capabilities</th>
+			{% for type in site.data.users %}
+				<th colspan="4">{{ type[1].title }}</th>
+			{% endfor %}
 		</tr>
 		<tr>
-			<th>Researcher</th>
-			<th>Scientist</th>
-			<th>Engineer</th>
-			<th>Manager</th>
-			<th>Researcher</th>
-			<th>Scientist</th>
-			<th>Engineer</th>
-			<th>Manager</th>
+			{% for type in site.data.users %}
+				{% for usertype in type[1].types %}
+					<th>{{ usertype.title }}</th>
+				{% endfor %}
+			{% endfor %}
 		</tr>
 	</thead>
 	<tbody>
@@ -34,17 +29,21 @@
 		{% for competence in element.competences %}
 		<tr>
 			{% if isfirst %}
-			<td rowspan="{{ element.competences.size }}" class="{{ element.color }} darken-3">{{ element.name }}</td>
+			<td rowspan="{{ element.competences.size }}" class="{{ element.color }} darken-3 white-text">{{ element.name }}</td>
 			{% assign isfirst = false %}
 			{% endif %}
-			<td class="{{ element.color }} lighten-4">{{ competence.name }}</td>
-			{% for type in types %}
-				{% capture level %}{{ competence.expertise.users[type] }}{% endcapture %}
-				<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
-			{% endfor %}
-			{% for type in types %}
-				{% capture level %}{{ competence.expertise.operators[type] }}{% endcapture %}
-				<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].name }}"></i></td>
+			<td class="{{ element.color }} lighten-4">
+				{% if competence.keyskill %}
+					<b>{{ competence.name }}</b>
+				{% else %}
+					{{ competence.name }}
+				{% endif %}
+			</td>
+			{% for type in site.data.users %}
+				{% for usertype in type[1].types %}
+					{% capture level %}{{ competence.expertise.users[usertype.name] }}{% endcapture %}
+					<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].title }}"></i></td>
+				{% endfor %}
 			{% endfor %}
 		</tr>
 		{% endfor %}
