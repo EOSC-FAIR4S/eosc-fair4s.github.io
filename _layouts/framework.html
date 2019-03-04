@@ -4,32 +4,19 @@
 
 <div>
 	<h1>{{ page.title }}</h1>
-	<h2>Version: {{ page.version }}</h2>
+	<h2>Version: {{ site.data.framework.version }}</h2>
 </div>
 
 <table>
-	<thead>
-		<tr>
-			<th rowspan="2" colspan="2">Open science stewardship competences and capabilities</th>
-			{% for type in site.data.users %}
-				<th colspan="4">{{ type[1].title }}</th>
-			{% endfor %}
-		</tr>
-		<tr>
-			{% for type in site.data.users %}
-				{% for usertype in type[1].types %}
-					<th>{{ usertype.title }}</th>
-				{% endfor %}
-			{% endfor %}
-		</tr>
-	</thead>
 	<tbody>
-		{% for element in page.framework %}
+		{% for element in site.data.framework.framework %}
 		{% assign isfirst = true %}
 		{% for competence in element.competences %}
 		<tr>
 			{% if isfirst %}
-			<td rowspan="{{ element.competences.size }}" class="{{ element.color }} darken-3 white-text">{{ element.name }}</td>
+			<td rowspan="{{ element.competences.size }}" class="{{ element.color }} darken-3 white-text">
+				{{ element.name }}
+			</td>
 			{% assign isfirst = false %}
 			{% endif %}
 			<td class="{{ element.color }} lighten-4">
@@ -39,15 +26,9 @@
 					{{ competence.name }}
 				{% endif %}
 			</td>
-			{% for type in site.data.users %}
-				{% for usertype in type[1].types %}
-					{% capture level %}{{ competence.expertise.users[usertype.name] }}{% endcapture %}
-					<td class="{{ element.color }} lighten-4"><i class="{{site.data.levels[level].logo}} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[level].title }}"></i></td>
-				{% endfor %}
-			{% endfor %}
 		</tr>
 		{% endfor %}
-		{% endfor %}		
+		{% endfor %}
 	</tbody>
 </table>
 
