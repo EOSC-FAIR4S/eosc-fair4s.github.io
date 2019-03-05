@@ -1,9 +1,11 @@
 researcher: 
   name: researcher
   title: Researcher
+  logo: fas fa-university
 data_scientist: 
   name: data_scientist
   title: Data scientist
+  logo: fas fa-chart-pie
   also: 
     - 
       description: (aka GO-TRAIN 'Specialist embedded research data skills'; EDISON data scientist(DP04), data analyst(DSP08), DTLS Data Steward 'A')
@@ -12,6 +14,7 @@ data_scientist:
 data_advisor: 
   name: data_advisor
   title: Data advisor
+  logo: fas fa-database
   also: 
     - 
       description: (aka GO-TRAIN 'institutional research data advisor and contact point') with variations in 'front-office' specialisations
@@ -21,6 +24,7 @@ data_advisor:
 data_service_provider:
   name: data_service_provider
   title: Data service provider
+  logo: fas fa-concierge-bell
   also: 
     - 
       description: (aka long-term stewardship) with variations in 'back office' specialisations
