@@ -7,7 +7,6 @@ data_scientist:
   title: Data scientist
   logo: fas fa-chart-pie
   also: 
-    - 
       description: (aka GO-TRAIN 'Specialist embedded research data skills'; EDISON data scientist(DP04), data analyst(DSP08), DTLS Data Steward 'A')
       sources: 
         - EDISON
@@ -16,7 +15,6 @@ data_advisor:
   title: Data advisor
   logo: fas fa-database
   also: 
-    - 
       description: (aka GO-TRAIN 'institutional research data advisor and contact point') with variations in 'front-office' specialisations
       sources: 
         - RDA
@@ -26,7 +24,6 @@ data_service_provider:
   title: Data service provider
   logo: fas fa-concierge-bell
   also: 
-    - 
       description: (aka long-term stewardship) with variations in 'back office' specialisations
       sources: 
         - ""
