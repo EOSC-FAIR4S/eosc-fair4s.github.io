@@ -1,9 +1,15 @@
 {% assign roles = site.roles | where:"role-id", include.role-id %}
-<div id="{{ include.role-id }}">
-	<h2>{{ site.data.roles[include.role-id].title }}</h2>
-	<ul>
-		{% for role in roles %}
-			<li>{{ role.title }} ({{role.path}})</li>
-		{% endfor %}
-	</ul>
-</div>
+<li>
+	<div class="collapsible-header">
+		<i class="{{ site.data.roles[include.role-id].logo }}"></i>
+		{{ site.data.roles[include.role-id].title }}
+		<span class="badge">{{ roles | size }}</span>
+	</div>
+	<div class="collapsible-body">
+		<ul>
+			{% for role in roles %}
+				<li><a href="{{ role.url }}">{{ role.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</li>
