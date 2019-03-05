@@ -18,7 +18,15 @@ $(document).ready(function () {
 	$('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.tooltipped').tooltip();
+
+    let searchParams = new URLSearchParams(window.location.search);
+    let param = searchParams.get('collapse');
+    if (param !== null) {
+    	console.log("inside");
+    	$('#' + param).addClass('active');
+    }
     $('.collapsible').collapsible();
+    
 /*
      $('.button-collapse').sideNav();
      $('.parallax').parallax();

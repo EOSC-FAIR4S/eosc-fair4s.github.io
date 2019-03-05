@@ -1,40 +1,50 @@
 ---
 layout: default
 ---
+{% assign selected_role = site.data.roles[page.role-id]%}
+<div class="container">
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h1>
+					<a href="/roles?collapse={{page.role-id}}">{{ selected_role.title }}</a> 
+					<span class="fas fa-angle-right"></span>
+					<span>{{ page.title }}</span>
+				</h1>
 
-<div>
-	<h1>{{ site.data.roles[page.role-id].title }}: {{ page.title }}</h1>
-
-	<table class="striped">
-		<thead>
-			<tr>
-				<th>Key skills</th>
-				<th>Level of expertise</th>
-				<th>Support Provider</th>
-				<th>Learning materials</th>
-			</tr>
-		</thead>
-		<tbody>
-			{% for mapping in page.mapping %}
-			<tr>
-				<td>
-					{{ mapping.keyskill }}
-				</td>
-				<td>
-					<i class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></i>
-				</td>
-				<td>
-					{{ mapping.support_providers | join: ", " }}
-				</td>
-				<td>
-					<ul>
-						{% for material in mapping.materials %}
-						<li><a href="{{ material.href }}" target="_blank">{{ material.title }}</li>
+				<table class="striped">
+					<thead>
+						<tr>
+							<th>Key skills</th>
+							<th>Level of expertise</th>
+							<th>Support Provider</th>
+							<th>Learning materials</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for mapping in page.mapping %}
+						<tr>
+							<td>
+								{{ mapping.keyskill }}
+							</td>
+							<td>
+								<i class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></i>
+							</td>
+							<td>
+								{{ mapping.support_providers | join: ", " }}
+							</td>
+							<td>
+								<ul>
+									{% for material in mapping.materials %}
+									<li><a href="{{ material.href }}" target="_blank">{{ material.title }}</a></li>
+									{% endfor %}
+								</ul>
+							</td>
+						</tr>
 						{% endfor %}
-					</ul>
-				</td>
-			</tr>
-			{% endfor %}
-		</tbody>
-	</table>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 </div>

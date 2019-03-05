@@ -1,5 +1,5 @@
 {% assign roles = site.roles | where:"role-id", include.role-id %}
-<li>
+<li id="{{ include.role-id }}">
 	<div class="collapsible-header">
 		<i class="{{ site.data.roles[include.role-id].logo }}"></i>
 		{{ site.data.roles[include.role-id].title }}
