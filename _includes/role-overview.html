@@ -6,6 +6,7 @@
 		<span class="badge">{{ roles | size }}</span>
 	</div>
 	<div class="collapsible-body">
+		<p>{{ site.data.roles[include.role-id].also.description }}</p>
 		<ul>
 			{% for role in roles %}
 				<li><a href="{{ role.url }}">{{ role.title }}</a></li>
