@@ -1,9 +1,12 @@
 basic: 
-    name: basic
-    logo: far fa-star-half
+  name: basic
+  title: comprehend (basic level)
+  logo: far fa-star-half
 intermediate: 
-    name: intermediate
-    logo: fas fa-star-half-alt
+  name: intermediate
+  title: apply (intermediate level)
+  logo: fas fa-star-half-alt
 expert: 
-    name: expert
-    logo: fas fa-star
+  name: expert
+  title: synthesise/ evaluate (expert level)
+  logo: fas fa-star
