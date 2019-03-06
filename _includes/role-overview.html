@@ -3,7 +3,7 @@
 	<div class="collapsible-header">
 		<i class="{{ site.data.roles[include.role-id].logo }}"></i>
 		{{ site.data.roles[include.role-id].title }}
-		<span class="badge">{{ roles | size }}</span>
+		<span class="badge" data-badge-caption="roles">{{ roles | size }}</span>
 	</div>
 	<div class="collapsible-body">
 		<p>{{ site.data.roles[include.role-id].also.description }}</p>
