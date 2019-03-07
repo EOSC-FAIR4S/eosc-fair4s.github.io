@@ -11,7 +11,30 @@ layout: default
 					<span class="fas fa-angle-right"></span>
 					<span>{{ page.title }}</span>
 				</h1>
+			</div>
 
+			{% for mapping in page.mapping %}
+			<div class="col s12 m12">
+				<h4><span class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></span> {{ mapping.keyskill }}</h4>
+				<p>{{ mapping.description }}</p>
+			</div>
+
+			<div class="col s12 m9">
+				<h5>Where to learn</h5>
+				<div class="collection">
+					{% for material in mapping.materials %}
+						<a href="{{ material.href }}" target="_blank" class="collection-item">{{ material.title }}</a>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="col s12 m3">
+				<h5>Who may help</h5>
+				<p>{{ mapping.support_providers | join: ", " }}</p>
+			</div>
+			{% endfor %}
+
+			<div class="col s12 m12">
 				<table class="striped">
 					<thead>
 						<tr>
