@@ -1,26 +1,24 @@
 ---
-role-id: researcher
-title: R2 PhD/ equivalent not yet fully independent
+role-id: data_advisor
+title: Data steward 'A'
 layout: role
 sources: 
-  - TU Delft workshop
+  - ?
 mapping: 
   - 
-    keyskill: Reuse data from existing sources
+    keyskill: Plan stewardship and sharing of FAIR outputs
     description: Some descriptive text why this is important.
-    level: intermediate
+    level: expert
     support_providers: 
-      - Data steward
       - Data librarian
-      - Archivist
     materials: 
       - 
         title: ""
         href: ""
   - 
     keyskill: Use or develop open research tools/services
-    description: something
-    level: basic
+    description: Some descriptive text why this is important.
+    level: expert
     support_providers: 
       - Research software engineer
       - Data service architect
@@ -30,22 +28,22 @@ mapping:
         href: ""
   - 
     keyskill: Publish FAIR outputs on recommended repositories
-    description: something
-    level: intermediate
+    description: Some descriptive text why this is important.
+    level: expert
     support_providers: 
-      - Research software engineer
       - Data librarian
+      - Research software engineer
     materials: 
       - 
         title: ""
         href: ""
   - 
-    keyskill: Develop open research strategy and vision
-    description: something
+    keyskill: Comply with ethical, legal and policy requirements
+    description: Some descriptive text why this is important.
     level: intermediate
     support_providers: 
-      - Data steward
-      - Data librarian
+      - Service manager/ project manager
+      - Data service architect
     materials: 
       - 
         title: ""
