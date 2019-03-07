@@ -17,8 +17,8 @@ layout: default
 						<tr>
 							<th>Key skills</th>
 							<th>Level of expertise</th>
-							<th>Support Provider</th>
-							<th>Learning materials</th>
+							<th>Where to learn</th>
+							<th>Who may help</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -31,14 +31,14 @@ layout: default
 								<i class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></i>
 							</td>
 							<td>
-								{{ mapping.support_providers | join: ", " }}
-							</td>
-							<td>
 								<ul>
 									{% for material in mapping.materials %}
 									<li><a href="{{ material.href }}" target="_blank">{{ material.title }}</a></li>
 									{% endfor %}
 								</ul>
+							</td>
+							<td>
+								{{ mapping.support_providers | join: ", " }}
 							</td>
 						</tr>
 						{% endfor %}
