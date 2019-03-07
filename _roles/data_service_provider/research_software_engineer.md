@@ -8,6 +8,7 @@ sources:
 mapping: 
   - 
     keyskill: ""
+    description: Some descriptive text why this is important.
     level: ""
     support_providers: 
       - ""
