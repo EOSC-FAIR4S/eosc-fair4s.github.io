@@ -16,9 +16,10 @@
 title: EOSC FAIR4S
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Here you can find the EOSCpilot framework of FAIR data stewardship skills
-  for science and scholarship FAIR4S demonstrating the major use cases the
-  work package Skills currently anticipates
+  FAIR4S is the skills and capability framework that was developed in Workpackage
+  7 in the European Open Science Cloud (EOSC) pilot project. FAIR4S aims to help
+  research communities and research institutions implement Research Data Management
+  and FAIR stewardship in the open science and data science context.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github:  https://github.com/EOSC-FAIR4S/eosc-fair4s.github.io
@@ -28,7 +29,8 @@ cookie_accept_message: Thanks!
 # Build settings
 markdown: kramdown
 
-parallax_image_one: assets/images/background1.png # These are the images used for the parallax background
+# These are the images used for the parallax background
+parallax_image_one: assets/images/background1.png 
 parallax_image_two: assets/images/background1.png
 
 plugins:
