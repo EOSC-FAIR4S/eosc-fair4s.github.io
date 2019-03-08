@@ -41,6 +41,10 @@ collections:
     output: true
     layout: role
     permalink: /roles/:path/
+  materials:
+    output: true
+    layout: material
+    permalink: /materials/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

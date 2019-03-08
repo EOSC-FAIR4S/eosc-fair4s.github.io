@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="container">
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h1>{{ page.title }}</h1>
+				<p>
+					by <em>{{ page.author.name }}</em>
+					{% if page.author.institution %}
+						({{ page.author.institution }})
+					{% endif %}
+					available at <a href="{{ page.external_url }}" target="_blank">{{ page.external_url }}</a>.
+				</p>
+			</div>
+			<div class="col s12 m12">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Skills you will gain</span>
+						{% for skill in page.skills %}
+							<a class="waves-effect waves-light btn" style="margin-bottom: 5px">
+								<span class="{{ site.data.levels[skill.level].logo }}"></span> {{ skill.name }}
+							</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m12">
+				<h2>Description</h2>
+				<p>{{ page.description | markdownify }}</p>
+			</div>
+			<div class="col s12 m12">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Keywords</span>
+						{% for keyword in page.keywords %}
+							<span class="btn" style="margin-bottom: 5px">{{ keyword }}</span>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
