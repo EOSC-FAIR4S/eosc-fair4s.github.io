@@ -11,8 +11,4 @@ mapping:
     level: ""
     support_providers: 
       - ""
-    materials: 
-      - 
-        title: ""
-        href: ""
 ---
