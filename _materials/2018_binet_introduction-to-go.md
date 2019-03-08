@@ -25,15 +25,16 @@ description: |-
 
   * https://tour.golang.org
 author: 
-  name: Sebastien Binet
-  institution: IN2P3/CNRS
+  - 
+    name: Sebastien Binet
+    institution: IN2P3/CNRS
 domain: Generic/ cross-domain
 topic: 
 keywords: 
   - go
   - programming language
   - concurrency programming
-time_required: 7 hours
+time_required: 5 hours
 target role: 
 language: English
 date_created: 04.08.2016
@@ -48,9 +49,6 @@ skills:
     level: basic
   - 
     name: Critical thinking and theory building
-    level: basic
-  - 
-    name: Use or develop open research tools/services
     level: basic
   - 
     name: Data transformation and integration
