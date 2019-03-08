@@ -15,7 +15,7 @@ topic:
 keywords: 
   - python
   - programming language
-time_required: 7 hours
+time_required: 5 hours
 target role: 
 language: English
 date_created: 17.08.2018
