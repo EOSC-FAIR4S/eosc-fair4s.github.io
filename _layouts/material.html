@@ -8,10 +8,18 @@ layout: default
 			<div class="col s12 m12">
 				<h1>{{ page.title }}</h1>
 				<p>
-					by <em>{{ page.author.name }}</em>
-					{% if page.author.institution %}
-						({{ page.author.institution }})
-					{% endif %}
+					by
+					{% assign first = true %}
+					{% for author in page.author %}
+						{% if first == false %}
+							and 
+						{% endif %}
+						<em>{{ author.name }}</em>
+						{% if author.institution %}
+							({{ author.institution }})
+						{% endif %}
+						{% assign first = false %}
+					{% endfor %}
 					available at <a href="{{ page.external_url }}" target="_blank">{{ page.external_url }}</a>.
 				</p>
 			</div>
