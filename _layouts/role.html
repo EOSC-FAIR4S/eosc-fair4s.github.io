@@ -21,11 +21,15 @@ layout: default
 
 			<div class="col s12 m9">
 				<h5>Where to learn</h5>
+				{% if mapping.materials %}
 				<div class="collection">
 					{% for material in mapping.materials %}
 						<a href="{{ material.href }}" target="_blank" class="collection-item">{{ material.title }}</a>
 					{% endfor %}
 				</div>
+				{% else %}
+				<p>Sorry, no relevant learning materials known yet.</p>
+				{% endif %}
 			</div>
 
 			<div class="col s12 m3">
@@ -33,41 +37,6 @@ layout: default
 				<p>{{ mapping.support_providers | join: ", " }}</p>
 			</div>
 			{% endfor %}
-
-			<div class="col s12 m12">
-				<table class="striped">
-					<thead>
-						<tr>
-							<th>Key skills</th>
-							<th>Level of expertise</th>
-							<th>Where to learn</th>
-							<th>Who may help</th>
-						</tr>
-					</thead>
-					<tbody>
-						{% for mapping in page.mapping %}
-						<tr>
-							<td>
-								{{ mapping.keyskill }}
-							</td>
-							<td>
-								<i class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></i>
-							</td>
-							<td>
-								<ul>
-									{% for material in mapping.materials %}
-									<li><a href="{{ material.href }}" target="_blank">{{ material.title }}</a></li>
-									{% endfor %}
-								</ul>
-							</td>
-							<td>
-								{{ mapping.support_providers | join: ", " }}
-							</td>
-						</tr>
-						{% endfor %}
-					</tbody>
-				</table>
-			</div>
 		</div>
 	</div>
 </div>
