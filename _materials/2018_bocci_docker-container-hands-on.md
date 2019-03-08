@@ -46,16 +46,10 @@ skills:
     name: Prepare and document for FAIR outputs
     level: basic
   - 
-    name: Data transfer and long-term storage
-    level: basic
-  - 
     name: Software review and preservation
     level: basic
   - 
     name: Access control and management
-    level: basic
-  - 
-    name: Open access publishing and self-archiving
     level: basic
   - 
     name: Publish FAIR outputs on recommended repositories
@@ -65,9 +59,6 @@ skills:
     level: basic
   - 
     name: Information security and risk management
-    level: basic
-  - 
-    name: Data governance, handling third-party data
     level: basic
   - 
     name: Storage security management
