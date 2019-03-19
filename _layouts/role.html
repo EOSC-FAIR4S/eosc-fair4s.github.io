@@ -21,14 +21,22 @@ layout: default
 
 			<div class="col s12 m9">
 				<h5>Where to learn</h5>
-				{% if mapping.materials %}
-				<div class="collection">
-					{% for material in mapping.materials %}
-						<a href="{{ material.href }}" target="_blank" class="collection-item">{{ material.title }}</a>
+				{% assign material_found = false %}
+				{% for material in site.materials %}
+					{% for skill in material.skills %}
+						{% if skill.name == mapping.keyskill and site.data.levels[skill.level].value >= site.data.levels[mapping.level].value %}
+							{% if material_found == false %}
+								<div class="collection">
+							{% endif %}
+							{% assign material_found = true %}
+							<a href="{{ material.href }}" class="collection-item">{{ material.title }}</a>
+						{% endif %}
 					{% endfor %}
-				</div>
+				{% endfor %}
+				{% if material_found == false %}
+					<p>Sorry, no relevant learning materials known yet.</p>
 				{% else %}
-				<p>Sorry, no relevant learning materials known yet.</p>
+					</div>
 				{% endif %}
 			</div>
 
