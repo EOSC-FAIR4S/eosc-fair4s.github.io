@@ -1,0 +1,20 @@
+---
+---
+@import "materialize";
+
+nav {
+  // logo
+  .brand-logo {
+    padding-left: 15px;
+    padding-top: 10px;
+    height: $navbar-height;
+    
+    @media #{$medium-and-down} {
+      height: $navbar-height-mobile;
+    }
+  }
+}
+
+.parallax-container {
+  height: 400px;
+}
