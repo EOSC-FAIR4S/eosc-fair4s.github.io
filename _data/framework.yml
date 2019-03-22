@@ -5,7 +5,7 @@ framework:
     color: red
     competences: 
       - 
-        name: stewardship_planning_and_FAIR_sharing
+        name: stewardship_planning_and_fair_sharing
         title: Plan stewardship and sharing of FAIR outputs
         keyskill: true
       - 
