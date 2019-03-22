@@ -24,23 +24,27 @@ layout: default
 
 			<div class="col s12 m9">
 				<h5>Where to learn</h5>
-				{% assign material_found = false %}
-				{% for material in site.materials %}
-					{% for skill in material.skills %}
-						{% if skill.name == mapping.keyskill and site.data.levels[skill.level].value >= site.data.levels[mapping.level].value %}
-							{% if material_found == false %}
-								<div class="collection">
+				{% assign levels = "basic,intermediate,expert" | split: "," %}
+				{% for level in levels %}
+					{% assign material_found = false %}
+					<h6>{{ site.data.levels[level].title | capitalize }}</h6>
+					{% for material in site.materials %}
+						{% for skill in material.skills %}
+							{% if skill.name == mapping.keyskill and skill.level == level %}
+								{% if material_found == false %}
+									<div class="collection">
+								{% endif %}
+								{% assign material_found = true %}
+								<a href="{{ material.url }}"  class="collection-item">{{ material.title }}</a>
 							{% endif %}
-							{% assign material_found = true %}
-							<a href="{{ material.url }}" class="collection-item">{{ material.title }}</a>
-						{% endif %}
+						{% endfor %}
 					{% endfor %}
+					{% if material_found == false %}
+						<p>Sorry, no relevant learning materials known yet.</p>
+					{% else %}
+						</div>
+					{% endif %}
 				{% endfor %}
-				{% if material_found == false %}
-					<p>Sorry, no relevant learning materials known yet.</p>
-				{% else %}
-					</div>
-				{% endif %}
 			</div>
 
 			<div class="col s12 m3">
