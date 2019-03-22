@@ -1,37 +1,37 @@
 ---
 role-id: data_advisor
-title: Data steward 'B'
+title: Data steward B
 layout: role
 sources: 
   - DTL
   - ELIXIR
 mapping: 
   - 
-    keyskill: Plan stewardship and sharing of FAIR outputs
-    description: Some descriptive text why this is important.
+    keyskill: stewardship_planning_and_fair_sharing
+    description: ""
     level: intermediate
     support_providers: 
       - Data steward A
       - Data librarian
   - 
-    keyskill: Use or develop open research tools/services
-    description: Some descriptive text why this is important.
+    keyskill: open_research_tools_services_usage_or_development
+    description: ""
     level: intermediate
     support_providers: 
       - Data steward A
       - Research software engineer
       - Data service architect
   - 
-    keyskill: Publish FAIR outputs on recommended repositories
-    description: Some descriptive text why this is important.
+    keyskill: fair_output_preparation_and_documentation
+    description: ""
     level: intermediate
     support_providers: 
       - Data steward A
       - Data librarian
       - Research software engineer
   - 
-    keyskill: Recognise, cite and acknowledge contributions
-    description: Some descriptive text why this is important.
+    keyskill: fair_data_publishing
+    description: ""
     level: intermediate
     support_providers: 
       - Data steward A

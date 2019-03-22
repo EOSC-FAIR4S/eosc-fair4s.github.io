@@ -7,9 +7,33 @@ sources:
   - RI Train
 mapping: 
   - 
-    keyskill: ""
-    description: Some descriptive text why this is important.
-    level: ""
+    keyskill: open_research_tools_services_usage_or_development
+    description: ""
+    level: expert
     support_providers: 
-      - ""
+      - Data service architect
+      - Data scientist
+      - Research software engineer
+      - Data librarian
+  - 
+    keyskill: legal_and_ethics_application
+    description: ""
+    level: intermediate
+    support_providers:
+      - Data steward A
+  - 
+    keyskill: open_research_strategy_development
+    description: ""
+    level: expert
+    support_providers: 
+      - Data service architect
+      - Data steward A
+  - 
+    keyskill: secure_funding
+    description: ""
+    level: intermediate
+    support_providers: 
+      - Researcher R4
+      - Data steward A
+      - Data steward B
 ---
