@@ -5,811 +5,221 @@ framework:
     color: red
     competences: 
       - 
-        name: Plan stewardship and sharing of FAIR outputs
+        name: stewardship_planning_and_FAIR_sharing
+        title: Plan stewardship and sharing of FAIR outputs
         keyskill: true
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: intermediate
-            engineer: basic
-            manager: expert
-          operators: 
-            researcher: expert
-            scientist: expert
-            engineer: basic
-            manager: expert
       - 
-        name: Model data structures and define database needs
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: expert
-            manager: basic
-          operators: 
-            researcher: intermediate
-            scientist: intermediate
-            engineer: intermediate
-            manager: expert
+        name: data_structures_modelling_and_database_needs_definition
+        title: Model data structures and define database needs
       - 
-        name: Specifying metadata and persistent id. standards
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: intermediate
-            engineer: basic
-            manager: intermediate
-          operators: 
-            researcher: basic
-            scientist: basic
-            engineer: intermediate
-            manager: intermediate
+        name: metadata_specification_and_id_standards
+        title: Specifying metadata and persistent id. standards
       - 
-        name: Analyse requirements for services or software
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: expert
-            manager: intermediate
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: intermediate
-            manager: expert
+        name: service_and_software_requirements
+        title: Analyse requirements for services or software
       - 
-        name: Appraise and select repositories for FAIR sharing
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: intermediate
-            engineer: basic
-            manager: expert
-          operators: 
-            researcher: intermediate
-            scientist: basic
-            engineer: intermediate
-            manager: expert
+        name: repository_appraisal_and_selection
+        title: Appraise and select repositories for FAIR sharing
   - 
     name: Capture and process
     color: green
     competences: 
       - 
-        name: Reuse data from existing sources
+        name: data_reusage
+        title: Reuse data from existing sources
         keyskill: true
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: expert
-            engineer: basic
-            manager: intermediate
-          operators: 
-            researcher: expert
-            scientist: basic
-            engineer: basic
-            manager: basic
       - 
-        name: Manage databases
-        expertise: 
-          users: 
-            researcher: ''
-            scientist: intermediate
-            engineer: expert
-            manager: basic
-          operators: 
-            researcher: basic
-            scientist: intermediate
-            engineer: expert
-            manager: intermediate
+        name: database_management
+        title: Manage databases
       - 
-        name: Software prototyping
-        expertise: 
-          users: 
-            researcher: ''
-            scientist: intermediate
-            engineer: expert
-            manager: basic
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: expert
-            manager: intermediate
+        name: software_prototyping
+        title: Software prototyping
       - 
-        name: Set up and document workflows
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: intermediate
-            engineer: basic
-            manager: expert
-          operators: 
-            researcher: basic
-            scientist: basic
-            engineer: basic
-            manager: basic
+        name: workflow_setup_and_documentation
+        title: Set up and document workflows
       - 
-        name: File naming and organisation
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: intermediate
-            engineer: intermediate
-            manager: expert
-          operators: 
-            researcher: intermediate
-            scientist: intermediate
-            engineer: intermediate
-            manager: intermediate
+        name: file_naming_and_organisation
+        title: File naming and organisation
       - 
-        name: Data cleaning, processing and software versioning
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: expert
-            engineer: expert
-            manager: expert
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: expert
-            manager: intermediate
+        name: data_cleaning_processing_and_software_versioning
+        title: Data cleaning, processing and software versioning
   - 
     name: Integrate and analyse
     color: purple
     competences: 
       - 
-        name: Use or develop open research tools/services
+        name: open_research_tools_services_usage_or_development
+        title: Use or develop open research tools/services
         keyskill: true
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: expert
-            manager: intermediate
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: expert
-            manager: expert
       - 
-        name: Critical thinking and theory building
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: expert
-            engineer: intermediate
-            manager: basic
-          operators: 
-            researcher: intermediate
-            scientist: basic
-            engineer: basic
-            manager: basic
+        name: critical_thinking_and_theory_building
+        title: Critical thinking and theory building
       - 
-        name: Creative problem solving, flexibility
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: expert
-            engineer: expert
-            manager: intermediate
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: basic
-            manager: basic
+        name: creative_problem_solving_flexibility
+        title: Creative problem solving, flexibility 
       - 
-        name: Math and statistical knowledge application
-        expertise: 
-          users: 
-            researcher: intermediate
-            scientist: expert
-            engineer: intermediate
-            manager: basic
-          operators: 
-            researcher: intermediate
-            scientist: basic
-            engineer: basic
-            manager: basic
+        name: math_and_statistical_knowledge_application
+        title: Math and statistical knowledge application
       - 
-        name: Data transformation and integration
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: expert
-            manager: intermediate
-          operators: 
-            researcher: intermediate
-            scientist: expert
-            engineer: basic
-            manager: basic
+        name: data_transformation_and_integration
+        title: Data transformation and integration
       - 
-        name: Data mining, querying, interpretation
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: basic
-            manager: basic
-          operators: 
-            researcher: basic
-            scientist: expert
-            engineer: basic
-            manager: basic
+        name: data_mining_querying_interpretation
+        title: Data mining, querying, interpretation
       - 
-        name: Predictive modelling and analytics
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expert
-            engineer: basic
-            manager: basic
-          operators: 
-            researcher: basic
-            scientist: basic
-            engineer: basic
-            manager: basic
+        name: predictive_modelling_and_analytics
+        title: Predictive modelling and analytics
       - 
-        name: Machine learning methods
-        expertise: 
-          users: 
-            researcher: basic
-            scientist: expertise
-            engineer: basic
-            manager: basic
-          operators: 
-            researcher: basic
-            scientist: basic
-            engineer: basic
-            manager: basic
+        name: machine_learning_methods
+        title: Machine learning methods
   - 
     name: Appraise and preserve
     color: cyan
     competences: 
     - 
-      name: Prepare and document for FAIR outputs
+      name: fair_output_preparation_and_documentation
+      title: Prepare and document for FAIR outputs
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: expert
-          scientist: expert
-          engineer: basic
-          manager: intermediate
     -
-      name: Data quality assurance using open standards
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: open_standard_data_quality_assurance
+      title: Data quality assurance using open standards
     - 
-      name: Ehtical, legal and data policy compliance
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: fair_assessment_and_policy_compliance
+      title: Assess FAIRness and check policy compliance
     - 
-      name: Data transfer and long-term storage
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: data_transfer_and_long_term_storage
+      title: Data transfer and long-term storage
     - 
-      name: Format and media migration
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: basic
-          engineer: expert
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: intermediate
-          manager: intermediate
+      name: format_and_media_migration
+      title: Format and media migration
     - 
-      name: Software review and preservation
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: intermediate
-          engineer: expert
-          manager: basic
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: software_review_and_preservation
+      title: Software review and preservation
   - 
     name: Publish and release
     color: amber
     competences: 
     - 
-      name: Publish FAIR outputs on recommended repositories
+      name: fair_data_publishing
+      title: Publish FAIR outputs on recommended repositories
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: intermediate
-          manager: intermediate
     - 
-      name: Access control and management
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: expert
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: expert
-          engineer: intermediate
-          manager: intermediate
+      name: access_control_and_management
+      title: Access control and management
     - 
-      name: Ethical application of patents, licenses
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: ethical_application_of_patents_licenses
+      title: Ethical application of patents, licenses
     - 
-      name: Open access publishing and self-archiving
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
+      name: open_access_publishing_and_self_archiving
+      title: Open access publishing and self-archiving
     - 
-      name: Documentation for public use, lay understanding
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: intermediate
-          engineer: expert
-          manager: basic
-        operators: 
-          researcher: expert
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: documentation
+      title: Documentation for public use, lay understanding
     - 
-      name: Engaging in open innovation beyond academia
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: basic
+      name: open_innovation
+      title: Engaging in open innovation beyond academia
   - 
     name: Expose and discover
     color: brown
     competences: 
     - 
-      name: Recognise, cite and acknowledge contributions
+      name: contribution_recognition_citation_and_acknowledgement
+      title: Recognise, cite and acknowledge contributions
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
     - 
-      name: Metadata and persistent id. exposure
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: expert
-          engineer: basic
-          manager: basic
+      name: metadata_and_id_exposure
+      title: Metadata and persistent id. exposure
     - 
-      name: Visualisation and presentation of results
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
+      name: result_visualisation_and_presentation
+      title: Visualisation and presentation of results
     - 
-      name: Evaluation of repository and publishing platforms
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: basic
+      name: repository_and_publishing_platform_evaluation
+      title: Evaluation of repository and publishing platforms
     - 
-      name: Searching repositories and scientific databases
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: expert
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: basic
-          manager: basic
+      name: repository_and_database_search
+      title: Searching repositories and scientific databases
     - 
-      name: Vocabulary/ ontology application
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: intermediate
-          manager: basic
+      name: vocabulary_ontology_application
+      title: Vocabulary/ ontology application
   - 
     name: Govern and assess
     color: indigo
     competences: 
     - 
-      name: Develop open research strategy and vision
+      name: open_research_strategy_development
+      title: Develop open research strategy and vision
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: basic
     - 
-      name: Comply with ethical, legal and policy requirements
+      name: legal_and_ethics_application
+      title: Apply policies to comply legal requirements, ethical & FAIR principles
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: basic
     - 
-      name: Research integrity, attribution, impact awareness
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: basic
+      name: research_integrity_attribution_impact_awareness
+      title: Research integrity, attribution, impact awareness
     - 
-      name: Information security and risk management
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: information_security_and_risk_management
+      title: Information security and risk management
     - 
-      name: Data governance, handling third-party data
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: data_governance
+      title: Data governance, handling third-party data
     - 
-      name: Storage security management
-      expertise: 
-        users: 
-          researcher: ''
-          scientist: intermediate
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: storage_security_management
+      title: Storage security management
     - 
-      name: Contributing to quality assessment or peer review
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: basic
-          manager: basic
+      name: quality_assessment_or_peer_review
+      title: Contributing to quality assessment or peer review
   - 
     name: Scope and resource
     color: blue
     competences: 
     - 
-      name: Secure funding for open science/ support
+      name: secure_funding
+      title: Secure funding for open science /support
       keyskill: true
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: basic
     - 
-      name: Perseverance delivering diverse open research projects
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: intermediate
-          manager: expert
+      name: open_research_delivery
+      title: Perseverance delivering diverse open research projects
     - 
-      name: Service level management
-      expertise: 
-        users: 
-          researcher: ''
-          scientist: basic
-          engineer: basic
-          manager: basic
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: intermediate
-          manager: expert
+      name: service_level_management
+      title: Service level management
     - 
-      name: Change management
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: intermediate
-          manager: expert
+      name: change_management
+      title: Change management
     - 
-      name: Workflow set-up and provenance information mgmt
-      expertise: 
-        users: 
-          researcher: ''
-          scientist: expert
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: expert
-          engineer: intermediate
-          manager: expert
+      name: workflow_setup_and_provenance_management
+      title: Workflow set-up and provenance information mgmt
     - 
-      name: Cloud environment and storage management
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: intermediate
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: expert
-          engineer: expert
-          manager: expert
+      name: cloud_environment_and_storage_management
+      title: Cloud environment and storage management
     - 
-      name: Authentication and authorisation (AAI) management
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: basic
-          engineer: expert
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: expert
+      name: aai_management
+      title: Authentication and authorisation (AAI) management
     - 
-      name: Costing of data management and preservation
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: basic
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: expert
+      name: costing_of_data_management_and_preservation
+      title: Costing of data management and preservation
   - 
     name: Advise and enable
     color: light-blue
     competences: 
     - 
-      name: Lead good practice by example
+      name: good_practice
+      title: Lead good practice by example
       keyskill: true
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
     - 
-      name: Engaging with research users and stakeholders
-      expertise: 
-        users: 
-          researcher: basic
-          scientist: intermediate
-          engineer: intermediate
-          manager: expertise
-        operators: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: research_user_and_stakeholder_engagement
+      title: Engaging with research users and stakeholders
     - 
-      name: Developing a profile of open research
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: expert
-          manager: expert
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: ''
+      name: open_research_profile_development
+      title: Developing a profile of open research
     - 
-      name: Training in open methods, services
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: intermediate
-          scientist: basic
-          engineer: basic
-          manager: intermediate
+      name: open_methods_services_training
+      title: Training in open methods, services
     - 
-      name: Contributing to education, professional development
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
-        operators: 
-          researcher: basic
-          scientist: basic
-          engineer: basic
-          manager: basic
+      name: education_and_provessional_development_contribution
+      title: Contributing to education, professional development
     - 
-      name: Contributing to open research, networks, standards bodies
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: expert
-          engineer: expert
-          manager: expert
-        operators: 
-          researcher: basic
-          scientist: intermediate
-          engineer: basic
-          manager: basic
+      name: open_research_networks_standards_bodies_contribution
+      title: Contributing to open research, networks, standards bodies
     - 
-      name: Building open inter-disciplinary collaborations
-      expertise: 
-        users: 
-          researcher: intermediate
-          scientist: intermediate
-          engineer: intermediate
-          manager: basic
-        operators: 
-          researcher: expertise
-          scientist: intermediate
-          engineer: intermediate
-          manager: intermediate
+      name: collaboration_building
+      title: Building open inter-disciplinary collaborations
