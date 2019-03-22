@@ -42,7 +42,11 @@ layout: default
 
 			<div class="col s12 m3">
 				<h5>Who may help</h5>
-				<p>{{ mapping.support_providers | join: ", " }}</p>
+				<ul>
+					{% for provider in mapping.support_providers %}
+					<li>{{ provider }}</li>
+					{% endfor %}
+				</ul>
 			</div>
 			{% endfor %}
 		</div>
