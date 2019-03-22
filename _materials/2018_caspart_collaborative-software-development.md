@@ -43,40 +43,40 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Set up and document workflows
+    name: workflow_setup_and_documentation
     level: basic
   - 
-    name: File naming and organisation
+    name: file_naming_and_organisation
     level: basic
   - 
-    name: Data cleaning, processing and software versioning
+    name: data_cleaning_processing_and_software_versioning
     level: intermediate
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name:  Use or develop open research tools/services
+    name:  open_research_tools_services_usage_or_development
     level: basic
   - 
-    name: Prepare and document for FAIR outputs
+    name: fair_output_preparation_and_documentation
     level: basic
   - 
-    name: Software review and preservation
+    name: software_review_and_preservation
     level: intermediate
   - 
-    name: Documentation for public use, lay understanding
+    name: documentation
     level: intermediate
   - 
-    name: Open access publishing and self-archiving
+    name: open_access_publishing_and_self_archiving
     level: basic
   - 
-    name: Publish FAIR outputs on recommended repositories
+    name: fair_data_publishing
     level: basic
   - 
-    name: Engaging with research users and stakeholders
+    name: research_user_and_stakeholder_engagement
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4251/
 reference: ""

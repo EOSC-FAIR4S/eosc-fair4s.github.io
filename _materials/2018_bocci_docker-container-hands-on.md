@@ -28,46 +28,46 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Plan stewardship and sharing of FAIR outputs
+    name: stewardship_planning_and_fair_sharing
     level: basic
   - 
-    name: Analyse requirements for services or software
+    name: service_and_software_requirements
     level: basic
   - 
-    name: Set up and document workflows
+    name: workflow_setup_and_documentation
     level: basic
   - 
-    name: File naming and organisation
+    name: file_naming_and_organisation
     level: basic
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
   - 
-    name: Prepare and document for FAIR outputs
+    name: fair_output_preparation_and_documentation
     level: basic
   - 
-    name: Software review and preservation
+    name: software_review_and_preservation
     level: basic
   - 
-    name: Access control and management
+    name: access_control_and_management
     level: basic
   - 
-    name: Publish FAIR outputs on recommended repositories
+    name: fair_data_publishing
     level: basic
   - 
-    name: Searching repositories and scientific databases
+    name: repository_and_database_search
     level: basic
   - 
-    name: Information security and risk management
+    name: information_security_and_risk_management
     level: basic
   - 
-    name: Storage security management
+    name: storage_security_management
     level: basic
   - 
-    name: Workflow set-up and provenance information mgmt
+    name: workflow_setup_and_provenance_management
     level: basic
   - 
-    name: Cloud environment and storage management
+    name: cloud_environment_and_storage_management
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4265/
 reference: ""

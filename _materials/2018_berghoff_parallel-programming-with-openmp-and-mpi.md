@@ -33,10 +33,10 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4256/
 reference: ""

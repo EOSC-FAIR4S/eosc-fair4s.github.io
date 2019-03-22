@@ -27,22 +27,22 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Plan stewardship and sharing of FAIR outputs
+    name: stewardship_planning_and_fair_sharing
     level: basic
   - 
-    name: Set up and document workflows
+    name: workflow_setup_and_documentation
     level: intermediate
   - 
-    name: Data cleaning, processing and software versioning
+    name: data_cleaning_processing_and_software_versioning
     level: intermediate
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
   - 
-    name: Prepare and document for FAIR outputs
+    name: fair_output_preparation_and_documentation
     level: intermediate
   - 
-    name: Workflow set-up and provenance information mgmt
+    name: workflow_setup_and_provenance_management
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4248/
 reference: https://doi.org/10.1093/bioinformatics/bty699

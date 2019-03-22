@@ -39,34 +39,34 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Model data structures and define database needs
+    name: data_structures_modelling_and_database_needs_definition
     level: basic
   - 
-    name: Analyse requirements for services or software
+    name: service_and_software_requirements
     level: basic
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: File naming and organisation
+    name: file_naming_and_organisation
     level: basic
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
   - 
-    name: Use or develop open research tools/services
+    name: open_research_tools_services_usage_or_development
     level: basic
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
   - 
-    name: Information security and risk management
+    name: information_security_and_risk_management
     level: basic
   - 
-    name: Storage security management
+    name: storage_security_management
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4267/
 reference: ""

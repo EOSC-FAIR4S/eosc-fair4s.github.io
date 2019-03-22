@@ -34,19 +34,19 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: intermediate
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
   - 
-    name: Use or develop open research tools/services
+    name: open_research_tools_services_usage_or_development
     level: basic
   - 
-    name: Visualisation and presentation of results
+    name: result_visualisation_and_presentation
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4249/
 reference: ""

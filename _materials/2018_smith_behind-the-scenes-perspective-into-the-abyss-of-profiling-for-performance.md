@@ -47,25 +47,25 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Analyse requirements for services or software
+    name: service_and_software_requirements
     level: basic
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Reuse data from existing sources
+    name: data_reusage
     level: basic
   - 
-    name: Math and statistical knowledge application
+    name: math_and_statistical_knowledge_application
     level: basic
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4288/
 reference: ""

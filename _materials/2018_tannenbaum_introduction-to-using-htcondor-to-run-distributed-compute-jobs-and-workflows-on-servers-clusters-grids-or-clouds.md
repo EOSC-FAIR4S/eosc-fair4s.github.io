@@ -27,28 +27,28 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Specifying metadata and persistent id. standards
+    name: metadata_specification_and_id_standards
     level: basic
   - 
-    name: Analyse requirements for services or software
+    name: service_and_software_requirements
     level: basic
   - 
-    name: Set up and document workflows
+    name: workflow_setup_and_documentation
     level: basic
   - 
-    name: File naming and organisation
+    name: file_naming_and_organisation
     level: basic
   - 
-    name: Metadata and persistent id. exposure
+    name: metadata_and_id_exposure
     level: basic
   - 
-    name: Information security and risk management
+    name: information_security_and_risk_management
     level: basic
   - 
-    name: Storage security management
+    name: storage_security_management
     level: basic
   - 
-    name: Workflow set-up and provenance information mgmt
+    name: workflow_setup_and_provenance_management
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4280/
 reference: ""

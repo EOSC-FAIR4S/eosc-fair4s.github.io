@@ -31,28 +31,28 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Plan stewardship and sharing of FAIR outputs
+    name: stewardship_planning_and_fair_sharing
     level: basic
   - 
-    name: Model data structures and define database needs
+    name: data_structures_modelling_and_database_needs_definition
     level: intermediate
   - 
-    name: Appraise and select repositories for FAIR sharing
+    name: repository_appraisal_and_selection
     level: basic
   - 
-    name: Manage databases
+    name: database_management
     level: basic
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Reuse data from existing sources
+    name: data_reusage
     level: basic
   - 
-    name: Data mining, querying, interpretation
+    name: data_mining_querying_interpretation
     level: basic
   - 
-    name: Information security and risk management
+    name: information_security_and_risk_management
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4255/
 reference: ""

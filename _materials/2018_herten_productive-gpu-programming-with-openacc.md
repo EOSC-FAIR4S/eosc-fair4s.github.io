@@ -23,16 +23,16 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Model data structures and define database needs
+    name: data_structures_modelling_and_database_needs_definition
     level: basic
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4254/
 reference: ""

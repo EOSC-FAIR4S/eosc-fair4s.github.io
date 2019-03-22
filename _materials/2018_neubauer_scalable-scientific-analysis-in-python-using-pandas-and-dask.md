@@ -29,31 +29,31 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Reuse data from existing sources
+    name: data_reusage
     level: basic
   - 
-    name: Math and statistical knowledge application
+    name: math_and_statistical_knowledge_application
     level: basic
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Creative problem solving, flexibility
+    name: creative_problem_solving_flexibility
     level: basic
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
   - 
-    name: Data mining, querying, interpretation
+    name: data_mining_querying_interpretation
     level: basic
   - 
-    name: Predictive modelling and analytics
+    name: predictive_modelling_and_analytics
     level: basic
   - 
-    name: Visualisation and presentation of results
+    name: result_visualisation_and_presentation
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4281/
 reference: ""

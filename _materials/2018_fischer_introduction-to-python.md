@@ -26,16 +26,16 @@ version: ""
 pid: ""
 skills: 
   - 
-    name: Software prototyping
+    name: software_prototyping
     level: basic
   - 
-    name: Critical thinking and theory building
+    name: critical_thinking_and_theory_building
     level: basic
   - 
-    name: Data transformation and integration
+    name: data_transformation_and_integration
     level: basic
   - 
-    name: Visualisation and presentation of results
+    name: result_visualisation_and_presentation
     level: basic
 external_url: https://indico.scc.kit.edu/event/427/contributions/4266/
 reference: ""
