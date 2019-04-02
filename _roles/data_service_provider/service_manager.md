@@ -33,7 +33,7 @@ mapping:
     description: ""
     level: intermediate
     support_providers: 
-      - Researcher R4
+      - R4 Leading Researcher
       - Data steward A
       - Data steward B
 ---

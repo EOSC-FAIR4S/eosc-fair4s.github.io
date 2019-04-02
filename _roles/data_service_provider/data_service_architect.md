@@ -11,7 +11,7 @@ mapping:
     description: ""
     level: expert
     support_providers: 
-      - Data steward D
+      - Data steward A
       - Data librarian
   - 
     keyskill: open_research_tools_services_usage_or_development
