@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% for section in site.data.fair4s.framework.framework %}
+{% assign competences = competences | concat: section.competences %}
+{% endfor %}
 <div class="container">
 	<div class="section">
 		<div class="row">
@@ -28,8 +31,9 @@ layout: default
 					<div class="card-content">
 						<span class="card-title">Skills you will gain</span>
 						{% for skill in page.skills %}
+							{% assign competence = competences | where: "name", skill.name %}
 							<a class="waves-effect waves-light btn" style="margin-bottom: 5px">
-								<span class="{{ site.data.levels[skill.level].logo }}"></span> {{ skill.name }}
+								<span class="{{ site.data.levels[skill.level].logo }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ skill.name }}{% endif %}
 							</a>
 						{% endfor %}
 					</div>
