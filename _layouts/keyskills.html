@@ -9,17 +9,31 @@ layout: default
 				<h1>{{ page.title }}</h1>
 				<h2>Version: {{site.data.fair4s.framework.version }}</h2>
 
-				<p>{{ page.content }}</p>
+				<p>{{ page.content | markdownify }}</p>
 
-				<ol>
-					{% for element in site.data.fair4s.framework.framework %}
-					{% for competence in element. competences %}
-					{% if competence.keyskill %}
-						<li>{{ competence.title }}</li>
-					{% endif %}
-					{% endfor %}
-					{% endfor %}
-				</ol>
+				<table>
+					<thead>
+						<tr>
+							<th>Skills group</th>
+							<th>Key skill</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for element in site.data.fair4s.framework.framework %}
+						{% assign isfirst = true %}
+						{% assign competences = element.competences | where: "keyskill", true %}
+						{% for competence in competences %}
+						<tr>
+							{% if isfirst %}
+								<td rowspan="{{ competences | size }}" class="{{ element.color }} darken-3 white-text">{{ element.name }}</td>
+								{% assign isfirst = false %}
+							{% endif %}
+							<td class="{{ element.color }} lighten-4">{{ competence.title }}</td>
+						</tr>
+						{% endfor %}
+						{% endfor %}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
