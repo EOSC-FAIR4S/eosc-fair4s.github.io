@@ -1,5 +1,5 @@
 ---
-title: Professional roles
+title: Roles of professional groups
 roles: 
   - researcher
   - data_scientist
@@ -8,4 +8,4 @@ roles:
 layout: roles
 ---
 
-Some description about roles.
+In the following, role profiles are given for each of the following professional groups except those indicated with *, which we propose subsequent EOSC projects should further define.
