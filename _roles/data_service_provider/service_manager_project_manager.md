@@ -1,8 +1,8 @@
 ---
 role-id: data_service_provider
-title: Data service architect*
+title: Service manager/ project manager*
 layout: role
 sources: 
   - FitSM
-  - EDISON
+  - RI Train
 ---
