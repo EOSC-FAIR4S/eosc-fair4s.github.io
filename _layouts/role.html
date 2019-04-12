@@ -7,18 +7,28 @@ layout: default
 		<div class="row">
 			<div class="col s12 m12">
 				<h1>
-					<a href="/roles?collapse={{page.role-id}}">{{ selected_role.title }}</a> 
+					{% assign path = page.url | split: "/" %}
+					<a href="/{{path[1]}}/?collapse={{page.role-id}}">{{ selected_role.title }}</a> 
 					<span class="fas fa-angle-right"></span>
 					<span>{{ page.title }}</span>
 				</h1>
+				<h3>{{ page.subtitle }}</h3>
 			</div>
 			{% for section in site.data.framework.framework %}
 			{% assign competences = competences | concat: section.competences %}
 			{% endfor %}
+
+			<div class="col s12 m12">
+			{% for mapping in page.mapping %}
+			{% assign competence = competences | where: "name", mapping.keyskill %}
+			<a href="#{{mapping.keyskill}}" class="waves-effect waves-light btn" style="margin-bottom: 5px;"><span class="{{ site.data.levels[mapping.level].logo }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ mapping.keyskill }}{% endif %}</a>
+			{% endfor %}
+			</div>
+
 			{% for mapping in page.mapping %}
 			{% assign competence = competences | where: "name", mapping.keyskill %}
 			<div class="col s12 m12">
-				<h4><span class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ mapping.keyskill }}{% endif %}</h4>
+				<a name="{{ mapping.keyskill }}"><h4><span class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ mapping.keyskill }}{% endif %}</h4></a>
 				<p>{{ mapping.description | markdownify }}</p>
 			</div>
 
