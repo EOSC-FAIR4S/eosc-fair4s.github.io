@@ -1,3 +1,3 @@
 [submodule "_data/fair4s"]
-	path = _data/fair4s
+	path = fair4s
 	url = https://github.com/EOSC-FAIR4S/fair4s-framework.git
