@@ -1,9 +1,10 @@
 {% assign roles = site.roles | where: "role-id", include.role-id %}
+{% assign no_draft = roles | where_exp: "item", "item.title contains '*'" | size %}
 <li id="{{ include.role-id }}">
 	<div class="collapsible-header">
 		<i class="{{ site.data.roles[include.role-id].logo }}"></i>
 		{{ site.data.roles[include.role-id].title }}
-		<span class="badge" data-badge-caption="profile roles">{{ roles | size }}</span>
+		<span class="badge" data-badge-caption="profile role(s)">{{roles | size | minus: no_draft}}</span>
 	</div>
 	<div class="collapsible-body">
 		<p>{{ site.data.roles[include.role-id].also.description }}</p>

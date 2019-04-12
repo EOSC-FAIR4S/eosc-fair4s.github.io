@@ -14,10 +14,11 @@ layout: default
 				</h1>
 				<h3>{{ page.subtitle }}</h3>
 			</div>
+
+			{% if page.mapping %}
 			{% for section in site.data.framework.framework %}
 			{% assign competences = competences | concat: section.competences %}
 			{% endfor %}
-
 			<div class="col s12 m12">
 			{% for mapping in page.mapping %}
 			{% assign competence = competences | where: "name", mapping.keyskill %}
@@ -66,6 +67,12 @@ layout: default
 				</ul>
 			</div>
 			{% endfor %}
+			{% else %}
+			<div class="col s12 m12">
+				The role profile for <em>{{selected_role.title}}</em> is not defined yet.
+				You can contribute by proposing a definition in <a href="{{site.framework_github}}/blob/master/{{page.path}}" target="_blank"><span class="fas fa-edit"></span> GitHub</a>.
+			</div>
+			{% endif %}
 		</div>
 	</div>
 </div>

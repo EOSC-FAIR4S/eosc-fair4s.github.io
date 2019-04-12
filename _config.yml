@@ -23,6 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github:  https://github.com/EOSC-FAIR4S/eosc-fair4s.github.io
+framework_github: https://github.com/EOSC-FAIR4S/fair4s-framework
 
 cookie_accept_message: Thanks!
 
@@ -40,7 +41,7 @@ collections:
   roles: 
     output: true
     layout: role
-    permalink: /roles/:path/
+    permalink: /role-profiles/:path/
   materials:
     output: true
     layout: material
