@@ -12,7 +12,7 @@ layout: default
 					<span>{{ page.title }}</span>
 				</h1>
 			</div>
-			{% for section in site.data.fair4s.framework.framework %}
+			{% for section in site.data.framework.framework %}
 			{% assign competences = competences | concat: section.competences %}
 			{% endfor %}
 			{% for mapping in page.mapping %}

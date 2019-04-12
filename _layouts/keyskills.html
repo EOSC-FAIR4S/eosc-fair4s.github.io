@@ -7,7 +7,7 @@ layout: default
 		<div class="row">
 			<div class="col s12 m12">
 				<h1>{{ page.title }}</h1>
-				<h2>Version: {{site.data.fair4s.framework.version }}</h2>
+				<h2>Version: {{site.data.framework.version }}</h2>
 
 				<p>{{ page.content | markdownify }}</p>
 
@@ -19,7 +19,7 @@ layout: default
 						</tr>
 					</thead>
 					<tbody>
-						{% for element in site.data.fair4s.framework.framework %}
+						{% for element in site.data.framework.framework %}
 						{% assign isfirst = true %}
 						{% assign competences = element.competences | where: "keyskill", true %}
 						{% for competence in competences %}
