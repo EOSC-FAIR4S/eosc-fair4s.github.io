@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+{% for skillarea in site.data.framework.framework %}
+{% assign tmp = skillarea.competences | where: 'name', page.name %}
+{% if tmp != empty %}
+{% assign competence = tmp %}
+{% endif %}
+{% endfor %}
+
+<div class="container">
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h1>
+					{{ competence[0].title }}
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h4>What knowledge, skills and attitudes or aptitudes are needed?</h4>
+			</div>
+		</div>
+		{% for need in page.needs %}
+		<div class="row">
+			<div class="col s12 m3">
+				<h5 class="light">{{ need[0] | capitalize }}</h5>
+			</div>
+			{% for level in site.data.levels %}
+			<div class="col s12 m9 offset-m3">
+				<b>{{ level[0] | capitalize }}</b>
+				{% assign needlevel = need[1] | where: 'level', level[0] | first %}
+				{{needlevel.description}}
+			</div>
+			{% endfor %}
+		</div>
+		{% endfor %}
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h4>What counts as success?</h4>
+				{{ page.success_criteria }}
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h4>Whose roles apply this skill?</h4>
+			</div>
+		</div>
+		{% for role in page.roles %}
+		<div class="row">
+			<div class="col s12 m3">
+				{% assign current_role = role[0] | strip %}
+				<h5 class="light">{{ site.data.roles[current_role].title }}</h5>
+			</div>
+			<div class="col s12 m9">
+				<p>
+				{% for element in role[1] %}
+				{% if element.directly_involved and element.keyskill %}
+					<b>{{element.name | append: '*'}}</b>
+				{% elsif element.directly_involved %}
+					<b>{{element.name}}</b>
+				{% else %}
+					{{element.name}}
+				{% endif %}
+				{% endfor %}
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h4>What related competences should the research team have?</h4>
+				<ul>
+				{% for competence in page.related_competences %}
+					<li>{{competence.name}}</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12 m12">
+				<h4>What capabilities – and services – would amplify this skill?</h4>
+			</div>
+		</div>
+		{% for capability in page.amplifying_capabilities %}
+		<div class="row">
+			<div class="col s12 m4">
+				<h5 class="light">{{ capability.name }}</h5>
+			</div>
+			<div class="col s12 m5">
+				<p>{{ capability.description | markdownify }}</p>
+			</div>
+			<div class="col s12 m3">
+				<ul>
+				{% for service in capability.services %}
+					<li>{{ service }}</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
