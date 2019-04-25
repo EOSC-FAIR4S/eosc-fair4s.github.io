@@ -2,24 +2,21 @@
 layout: default
 ---
 
-{% for skillarea in site.data.framework.framework %}
-{% assign tmp = skillarea.competences | where: 'name', page.name %}
-{% if tmp != empty %}
-{% assign competence = tmp %}
-{% endif %}
+{% for section in site.data.framework.framework %}
+{% assign competences = competences | concat: section.competences %}
 {% endfor %}
 
 <div class="container">
 	<div class="section">
 		<div class="row">
 			<div class="col s12 m12">
-				<h1>
-					{{ competence[0].title }}
-				</h1>
+				<h3>
+					<span class="black white-text">Skills Profile</span>
+					{% assign competence = competences | where: 'name', page.name | first %}
+					{{ competence.title }}
+				</h3>
 			</div>
 		</div>
-	</div>
-	<div class="section">
 		<div class="row">
 			<div class="col s12 m12">
 				<h4>What knowledge, skills and attitudes or aptitudes are needed?</h4>
@@ -30,11 +27,17 @@ layout: default
 			<div class="col s12 m3">
 				<h5 class="light">{{ need[0] | capitalize }}</h5>
 			</div>
+			{% assign first = true %}
 			{% for level in site.data.levels %}
+			{% if first %}
+			<div class="col s12 m9">
+			{% assign first = false %}
+			{% else %}
 			<div class="col s12 m9 offset-m3">
-				<b>{{ level[0] | capitalize }}</b>
+			{% endif %}
+				<p><b>{{ level[0] | capitalize }}</b>
 				{% assign needlevel = need[1] | where: 'level', level[0] | first %}
-				{{needlevel.description}}
+				{{needlevel.description}}</p>
 			</div>
 			{% endfor %}
 		</div>
@@ -84,8 +87,9 @@ layout: default
 			<div class="col s12 m12">
 				<h4>What related competences should the research team have?</h4>
 				<ul>
-				{% for competence in page.related_competences %}
-					<li>{{competence.name}}</li>
+				{% for relatedcompetence in page.related_competences %}
+					{% assign competence = competences | where: 'name', relatedcompetence.name | first%}
+					<li>{{competence.title}}</li>
 				{% endfor %}
 				</ul>
 			</div>
@@ -101,7 +105,8 @@ layout: default
 		{% for capability in page.amplifying_capabilities %}
 		<div class="row">
 			<div class="col s12 m4">
-				<h5 class="light">{{ capability.name }}</h5>
+				{% assign competence = competences | where: 'name', capability.name | first %}
+				<h5 class="light">{{ competence.title }}</h5>
 			</div>
 			<div class="col s12 m5">
 				<p>{{ capability.description | markdownify }}</p>
