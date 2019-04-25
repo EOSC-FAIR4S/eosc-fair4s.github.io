@@ -1,6 +1,6 @@
 ---
-title: Skill profiles
-layout: skillprofiles
+title: Skills profiles
+layout: skillsprofiles
 ---
 
 Skill profiles answer the following questions for each of the key skills:
