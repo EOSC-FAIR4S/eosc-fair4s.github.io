@@ -38,14 +38,30 @@ plugins:
   - jekyll-feed
 
 collections: 
+  skills-profiles: 
+    output: true
+    permalink: /skills-profiles/:path/
   role-profiles: 
     output: true
-    layout: role
     permalink: /role-profiles/:path/
-  materials:
+  materials: 
     output: true
     layout: material
     permalink: /materials/:path/
+
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: skills-profiles
+    values: 
+      layout: skillsprofile
+  - 
+    scope: 
+      path: ""
+      type: role-profiles
+    values: 
+      layout: role
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
