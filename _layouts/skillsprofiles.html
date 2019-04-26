@@ -2,12 +2,36 @@
 layout: default
 ---
 
+{% for section in site.data.framework.framework %}
+{% assign competences = competences | concat: section.competences %}
+{% endfor %}
+{% assign keyskills = competences | where: 'keyskill', true %}
+{% assign all_paths = site.skills-profiles | map: "path" %}
+
 <div class="container">
 	<div class="section">
 		<div class="row">
 			<div class="col s12 m12">
 				<h1>{{ page.title }}</h1>
 				<p>{{ page.content | markdownify }}</p>
+
+				<ul class="collapsible">
+					{% for keyskill in keyskills %}
+					<li>
+						{% assign found = false %}
+						{% for path in all_paths %}
+						{% if path contains keyskill.name %}
+						{% assign found = true %}
+						{% endif %}
+						{% endfor %}
+						{% if found %}
+						<a href="{{ keyskill.name }}">{{ keyskill.title }}</a>
+						{% else %}
+						{{ keyskill.title }}
+						{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</div>
