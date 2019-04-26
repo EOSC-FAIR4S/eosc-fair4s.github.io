@@ -6,7 +6,8 @@ layout: default
 	<div class="section">
 		<div class="row">
 			<div class="col s12 m12">
-				<h1>
+				<h3>
+					<span class="black white-text">Roll Profile</span>
 					{% assign path = page.url | split: "/" %}
 					<a href="/{{path[1]}}/?collapse={{page.role-id}}">{{ selected_role.title }}</a> 
 					<span class="fas fa-angle-right"></span>
@@ -69,7 +70,7 @@ layout: default
 			{% endfor %}
 			{% else %}
 			<div class="col s12 m12">
-				The role profile for <em>{{selected_role.title}}</em> is not defined yet.
+				The role profile for <em>{{page.title | remove_first: '*'}}</em> is not defined yet.
 				You can contribute by proposing a definition in <a href="{{site.framework_github}}/blob/master/{{page.path}}" target="_blank"><span class="fas fa-edit"></span> GitHub</a>.
 			</div>
 			{% endif %}
