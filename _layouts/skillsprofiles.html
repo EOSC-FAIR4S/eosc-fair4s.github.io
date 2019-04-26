@@ -6,7 +6,6 @@ layout: default
 {% assign competences = competences | concat: section.competences %}
 {% endfor %}
 {% assign keyskills = competences | where: 'keyskill', true %}
-{% assign all_paths = site.skills-profiles | map: "path" %}
 
 <div class="container">
 	<div class="section">
@@ -19,16 +18,15 @@ layout: default
 					{% for keyskill in keyskills %}
 					<li>
 						{% assign found = false %}
-						{% for path in all_paths %}
-						{% if path contains keyskill.name %}
+						{% for profile in site.skills-profiles %}
+						{% if profile.url contains keyskill.name %}
+						<a href="{{profile.url}}">{{ keyskill.title }}</a>
 						{% assign found = true %}
 						{% endif %}
 						{% endfor %}
-						{% if found %}
-						<a href="{{ keyskill.name }}">{{ keyskill.title }}</a>
-						{% else %}
+						{% unless found %}
 						{{ keyskill.title }}
-						{% endif %}
+						{% endunless %}
 					</li>
 					{% endfor %}
 				</ul>
