@@ -1,3 +1,7 @@
-{% assign roles = site.role-profiles | where: "role-id", include.role-id %}
-{% assign role = roles | where: "name", include.name | first %}
-<a href="{{ role.url }}">{{ role.title }}</a>
+{% assign tmp_roles = site.role-profiles | where: "role-id", include.role-id %}
+{% assign tmp_role = tmp_roles | where: "name", include.name | first %}
+{% if include.linked %}
+<a href="{{ tmp_role.url }}">{{ tmp_role.title }}</a>
+{% else %}
+{{ tmp_role.title }}
+{% endif %}

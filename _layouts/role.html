@@ -64,7 +64,7 @@ layout: default
 				<ul>
 					{% for provider in mapping.support_providers %}
 					<li>
-						{% include role-profile-title.html role-id=provider.role-id name=provider.name %}
+						{% include role-profile-title.html role-id=provider.role-id name=provider.name linked=true %}
 					</li>
 					{% endfor %}
 				</ul>
