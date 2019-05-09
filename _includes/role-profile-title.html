@@ -1,0 +1,3 @@
+{% assign roles = site.role-profiles | where: "role-id", include.role-id %}
+{% assign role = roles | where: "name", include.name | first %}
+<a href="{{ role.url }}">{{ role.title }}</a>

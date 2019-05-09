@@ -63,7 +63,9 @@ layout: default
 				<h5>Who may help</h5>
 				<ul>
 					{% for provider in mapping.support_providers %}
-					<li>{{ provider }}</li>
+					<li>
+						{% include role-profile-title.html role-id=provider.role-id name=provider.name %}
+					</li>
 					{% endfor %}
 				</ul>
 			</div>
