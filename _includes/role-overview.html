@@ -1,16 +1,25 @@
 {% assign roles = site.role-profiles | where: "role-id", include.role-id %}
-{% assign no_draft = roles | where_exp: "item", "item.title contains '*'" | size %}
+{% assign is_defined = 0 %}
+{% for tmp_role in roles %}
+{% if tmp_role.mapping %}
+{% assign is_defined = is_defined | plus: 1 %}
+{% endif %}
+{% endfor %}
 <li id="{{ include.role-id }}">
 	<div class="collapsible-header">
 		<i class="{{ site.data.roles[include.role-id].logo }}"></i>
 		{{ site.data.roles[include.role-id].title }}
-		<span class="badge" data-badge-caption="role profile(s)">{{roles | size | minus: no_draft}}</span>
+		<span class="badge" data-badge-caption="role profile(s)">{{ is_defined }}</span>
 	</div>
 	<div class="collapsible-body">
 		<p>{{ site.data.roles[include.role-id].also.description }}</p>
 		<ul>
-			{% for role in roles %}
-				<li><a href="{{ role.url }}">{{ role.title }}</a></li>
+			{% for tmp_role in roles %}
+				{% if tmp_role.mapping %}
+				<li><a href="{{ tmp_role.url }}">{{ tmp_role.title }}</a></li>
+				{% else %}
+				<li><a href="{{ tmp_role.url }}">{{ tmp_role.title | append: "*"}}</a></li>
+				{% endif %}
 			{% endfor %}
 		</ul>
 	</div>
