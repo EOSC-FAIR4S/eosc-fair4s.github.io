@@ -1,0 +1,43 @@
+capability: 
+  name: capability
+  description: |-
+    Competence applied at a research team or organisational level, with a 
+    defined level of expertise, to perform a service role or work in the EOSC 
+    environment.
+competence: 
+  name: competence
+  description: |-
+    Knowledge, skill and aptitude or attitude relating to a topic e.g. 
+    ‘workflow set-up and management’, combined with an expertise level.
+expertise_level: 
+  name: expertise level
+  description: |-
+    A description of level of competence; e.g. to indicate whether someone has 
+    a basic awareness of the topic, or an intermediate-level ability to do it, 
+    or expert competence sufficient to contribute something new to theory or 
+    practice.
+professional_group: 
+  name: professional group
+  description: |-
+    A person's domain of responsibility defined by a set of competences, e.g. 
+    domain research, data science/ analytics, data management, data service 
+    engineering.
+responsibility_level: 
+  name: responsibility level
+  description: |-
+    Application of a competence to the delivery of one or more capabilities in 
+    a specific research team or organisational context. Levels are, from low 
+    to high: support, discretion, substantial discretion, objective setting, 
+    or full accountability.
+skills_group: 
+  name: skills group
+  description: |-
+    Skills groups are of two types: those applied in a research project-specific 
+    way e.g. ‘capture and process’, and those applied consistently across 
+    (research) projects, e.g. ‘govern and assess’.
+skill: 
+  name: skill
+  description: |-
+    Demonstrable application of the knowledge and aptitude or attitudes needed 
+    to deliver a competence or capability to a specific context. Skills may be 
+    specified in the form of a skills user story.
