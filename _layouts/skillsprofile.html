@@ -69,11 +69,15 @@ layout: default
 				<p>
 				{% for element in role[1] %}
 				{% if element.directly_involved and element.keyskill %}
-					<b>{{element.name | append: '*'}}</b>
+					<b>
+						{% include role-profile-title.html role-id=current_role name=element.name %}*
+					</b>
 				{% elsif element.directly_involved %}
-					<b>{{element.name}}</b>
+					<b>
+						{% include role-profile-title.html role-id=current_role name=element.name %}
+					</b>
 				{% else %}
-					{{element.name}}
+					{% include role-profile-title.html role-id=current_role name=element.name %}
 				{% endif %}
 				{% endfor %}
 				</p>
