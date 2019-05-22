@@ -42,7 +42,7 @@ keywords:
 time_required: 6 hours
 target role: 
 language: English
-date_created: 12.01.2016
+date_created: 
 date_modified: 
 type: MOOC
 license: ""
