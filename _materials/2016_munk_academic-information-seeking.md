@@ -63,7 +63,7 @@ skills:
     level: basic
   - 
     name: repository_and_database_search
-    level: basic
+    level: intermediate
   - 
     name: documentation
     level: basic
