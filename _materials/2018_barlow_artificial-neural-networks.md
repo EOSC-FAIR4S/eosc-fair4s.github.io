@@ -43,5 +43,5 @@ skills:
     level: basic
 external_url: http://indico.ictp.it/event/8329/session/8/contribution/31
 references: 
-provider: CODATA School
+provider: CODATA School 2018
 ---
