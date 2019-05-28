@@ -44,6 +44,9 @@ skills:
   - 
     name: workflow_setup_and_provenance_management
     level: basic
+  - 
+    name: open_research_tools_services_usage_or_development
+    level: intermediate
 external_url: https://indico.scc.kit.edu/event/427/contributions/4248/
 reference: https://doi.org/10.1093/bioinformatics/bty699
 provider: GridKa School 2018

@@ -55,6 +55,9 @@ skills:
   - 
     name: result_visualisation_and_presentation
     level: basic
+  - 
+    name: open_research_tools_services_usage_or_development
+    level: intermediate
 external_url: https://indico.scc.kit.edu/event/427/contributions/4281/
 reference: ""
 provider: GridKa School 2018

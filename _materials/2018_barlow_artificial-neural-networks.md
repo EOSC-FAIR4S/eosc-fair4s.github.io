@@ -28,7 +28,7 @@ skills:
     level: basic
   - 
     name: open_research_tools_services_usage_or_development
-    level: basic
+    level: intermediate
   - 
     name: creative_problem_solving_flexibility
     level: basic
