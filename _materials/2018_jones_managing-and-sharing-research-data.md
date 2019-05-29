@@ -15,6 +15,9 @@ keywords:
   - metadata
   - file formats
   - ontologies
+  - data repositories
+  - licenses
+  - persistent identifiers
 time_required: 4 hours
 target role: 
 language: English
