@@ -1,6 +1,6 @@
 ---
 layout: material
-title: Inforamtion Security
+title: Information Security
 description: 
 author: 
   - 
