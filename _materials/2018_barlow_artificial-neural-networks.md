@@ -42,6 +42,6 @@ skills:
     name: result_visualisation_and_presentation
     level: basic
 external_url: http://indico.ictp.it/event/8329/session/8/contribution/31
-references: 
+reference: 
 provider: CODATA School 2018
 ---

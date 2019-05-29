@@ -60,6 +60,6 @@ skills:
     name: research_integrity_attribution_impact_awareness
     level: basic
 external_url: https://www.ands.org.au/guides/data-citation-awareness
-references: 
+reference: 
 provider: Australian National Data Service (ANDS)
 ---
