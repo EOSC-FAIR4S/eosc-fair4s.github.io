@@ -1,0 +1,28 @@
+framework:
+  plan_and_design: 
+    name: plan_and_design
+    color: red
+  capture_and_process: 
+    name: capture_and_process
+    color: green
+  integrate_and_analyse: 
+    name: integrate_and_analyse
+    color: purple
+  appraise_and_preserve: 
+    name: appraise_and_preserve
+    color: cyan
+  publish_and_release: 
+    name: publish_and_release
+    color: amber
+  expose_and_discover: 
+    name: expose_and_discover
+    color: brown
+  govern_and_assess: 
+    name: govern_and_assess
+    color: indigo
+  scope_and_resource: 
+    name: scope_and_resource
+    color: blue
+  advise_and_enable: 
+    name: advise_and_enable
+    color: light-blue

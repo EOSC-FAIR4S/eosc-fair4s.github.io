@@ -21,14 +21,15 @@ layout: default
 					<tbody>
 						{% for element in site.data.framework.framework %}
 						{% assign isfirst = true %}
+						{% assign color = site.data.colors.framework[element.name].color %}
 						{% assign competences = element.competences | where: "keyskill", true %}
 						{% for competence in competences %}
 						<tr>
 							{% if isfirst %}
-								<td rowspan="{{ competences | size }}" class="{{ element.color }} darken-3 white-text">{{ element.name }}</td>
+								<td rowspan="{{ competences | size }}" class="{{ color }} darken-3 white-text">{{ element.title }}</td>
 								{% assign isfirst = false %}
 							{% endif %}
-							<td class="{{ element.color }} lighten-4">{{ competence.title }}</td>
+							<td class="{{ color }} lighten-4">{{ competence.title }}</td>
 						</tr>
 						{% endfor %}
 						{% endfor %}
