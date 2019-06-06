@@ -17,20 +17,20 @@ layout: default
 			</div>
 
 			{% if page.mapping %}
-			{% for section in site.data.framework.framework %}
-			{% assign competences = competences | concat: section.competences %}
-			{% endfor %}
 			<div class="col s12 m12">
 			{% for mapping in page.mapping %}
-			{% assign competence = competences | where: "name", mapping.keyskill %}
-			<a href="#{{mapping.keyskill}}" class="waves-effect waves-light btn" style="margin-bottom: 5px;"><span class="{{ site.data.levels[mapping.level].logo }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ mapping.keyskill }}{% endif %}</a>
+			{% include competence-title.html competence-name=mapping.keyskill competence-level=mapping.level render-button=true linked=true %}
 			{% endfor %}
 			</div>
 
 			{% for mapping in page.mapping %}
 			{% assign competence = competences | where: "name", mapping.keyskill %}
 			<div class="col s12 m12">
-				<a name="{{ mapping.keyskill }}"><h4><span class="{{ site.data.levels[mapping.level].logo }} tooltipped" data-position="right" data-tooltip="{{ site.data.levels[mapping.level].title }}"></span> {% if competence[0] %}{{ competence[0].title }}{% else %}{{ mapping.keyskill }}{% endif %}</h4></a>
+				<a name="{{ mapping.keyskill }}">
+					<h4>
+						{% include competence-title.html competence-name=mapping.keyskill competence-level=mapping.level %}
+					</h4>
+				</a>
 				<p>{{ mapping.description | markdownify }}</p>
 			</div>
 
