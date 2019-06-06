@@ -6,8 +6,8 @@
 {% assign tmp_competence = tmp_competences | where: "name", include.competence-name | first %}
 {% if include.render-button %}
 	<a {% if include.linked %}href="#{{ include.competence-name }}"{% endif %} class="waves-effect waves-light btn" style="margin-bottom: 5px">
-		<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
+		{% if include.competence-level %}<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% endif %}{% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
 	</a>
 {% else %}
-	<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
+	{% if include.competence-level %}<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% endif %}{% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
 {% endif %}
