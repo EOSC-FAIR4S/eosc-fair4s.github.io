@@ -65,7 +65,7 @@ layout: default
 				{% for element in role[1] %}
 				{% if element.directly_involved and element.keyskill %}
 					<b>
-						{% include role-profile-title.html role-id=current_role name=element.name %}*
+						{% include role-profile-title.html role-id=current_role name=element.name starred=true %}
 					</b>
 				{% elsif element.directly_involved %}
 					<b>

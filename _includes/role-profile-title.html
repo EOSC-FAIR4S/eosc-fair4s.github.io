@@ -1,7 +1,19 @@
 {% assign tmp_roles = site.role-profiles | where: "role-id", include.role-id %}
 {% assign tmp_role = tmp_roles | where: "name", include.name | first %}
+
+{% capture tmp-role-profile-title %}
+	{%- if tmp_role -%}
+		{{ tmp_role.title }}
+	{%- else -%}
+		{{ include.role-id }}.{{ include.name }}
+	{%- endif -%}
+	{%- if include.starred -%}*{%- endif -%}
+{% endcapture %}
+
 {% if include.linked %}
-<a href="{{ tmp_role.url }}">{{ tmp_role.title }}</a>
+<a href="{{ tmp_role.url }}">
+	{{ tmp-role-profile-title }}
+</a>
 {% else %}
-{{ tmp_role.title }}
+	{{ tmp-role-profile-title }}
 {% endif %}
