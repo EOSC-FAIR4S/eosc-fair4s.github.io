@@ -1,21 +1,21 @@
-{% include head.html %}
+---
+layout: default
+---
 
-{% include navigation.html %}
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center light-blue-text text-darken-2">{{ site.title }}</h1>
-        <div class="row center">
-          <h5 class="header col s12 white-text light">{{ site.description }}</h5>
-        </div>
-        <br><br>
-
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center light-blue-text text-darken-2">{{ site.title }}</h1>
+      <div class="row center">
+        <h5 class="header col s12 white-text light">{{ site.description }}</h5>
       </div>
+      <br><br>
+
     </div>
-    <div class="parallax"><img src="{{site.parallax_image_one}}" alt="Background image home"></div>
   </div>
+  <div class="parallax"><img src="{{site.parallax_image_one}}" alt="Background image home"></div>
+</div>
 
 <div class="container">
   <div class="section">
@@ -101,5 +101,3 @@
     </div>
   </div>
 </div>
-
-{% include footer.html %}
