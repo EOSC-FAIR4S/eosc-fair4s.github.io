@@ -1,0 +1,13 @@
+{% unless tmp_competences %}
+	{% for section in site.data.framework.framework %}
+		{% assign tmp_competences = tmp_competences | concat: section.competences %}
+	{% endfor %}
+{% endunless %}
+{% assign tmp_competence = tmp_competences | where: "name", include.competence-name | first %}
+{% if include.render-button %}
+	<a class="waves-effect waves-light btn" style="margin-bottom: 5px">
+		<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
+	</a>
+{% else %}
+	<span class="{{ site.data.levels[include.competence-level].logo }}"></span> {% if tmp_competence %}{{ tmp_competence.title }}{% else %}{{ include.competence-name }}{% endif %}
+{% endif %}
